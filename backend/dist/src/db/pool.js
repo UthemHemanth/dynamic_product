@@ -1,0 +1,7 @@
+import { Pool } from "pg";
+export const pool = globalThis.__pgPool ??
+    new Pool({
+        connectionString: process.env.DATABASE_URL,
+    });
+if (process.env.NODE_ENV !== "production")
+    globalThis.__pgPool = pool;

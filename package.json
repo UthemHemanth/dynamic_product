@@ -1,0 +1,17 @@
+{
+  "name": "dynamic-add-product",
+  "private": true,
+  "scripts": {
+    "dev:backend": "npm run dev -w backend",
+    "dev:frontend": "npm run dev -w frontend",
+    "start:backend": "npm run start -w backend",
+    "start:frontend": "npm run start -w frontend"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "dependencies": {
+    "cors": "^2.8.6"
+  }
+}
